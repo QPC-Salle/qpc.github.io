@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+<div class="header">
+<h1>Portfoli Llenguatje de Marques</h1>  
+<p>By Quim Pérez Castells ^^ </p>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Presentació</h2>
+      <img src="img sources/Code.jpg" alt="Code" width="30%" height="25%">
+      <p>Fan de la programmació i els videojocs desde ben petit!</p>
+      <p>Tinc esperienca amb C++, Java, Html i CSS... I molta experiencia jugant videojocs</p>
+      <p>Nascut i crescut en un poblet de l'Urgell, interessat en explorar el mon, mentre aprofito per fer alguna web o joc XD</p>
+    </div>
+    <div class="card">
+      <h2>Work Experience</h2>
+      <h5>2020-2023</h5>
+      <div></div>
+      <p>He fet decenes de pagines web, amb Html5, CSS3 i JavaScript</p>
+      <p>També he creat codis per a manteniment de bases de dades, petites mecaniques de joc i petites aportacions en aplicacions</p>
+      <h5>2023-2024</h5>
+      <p>Actualment preparant el codi i tile set d'un joc propi</p>
+      <P>Participat de game tester al joc BlackStar</P>
+      <h5>2024</h5>
+      <p>Buscant projectes ^^</p>
+    </div>
+    <div class="row"> <div class="card"><h2>CV</h2>
+      <p>Estudis de Batchiller Tecnologic al INS MANUEL DE PEDROLO, TARREGA</p>   
+      <p>Estudis Universitaris en l'UDG, GIRONA en GDDV</p>
+      <p>Estudis de Formació Professional en La Salle, MOLLERUSA</p>
+    
+    </div> </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Jo</h2>
+      <div><img src="img sources/296fe121-5dfa-43f4-98b5-db50019738a7.jpg" width="60%"></div>
+      <p>02/07/2004 jugador d'escacs, web/game developer i friki :P</p>
+    </div>
+    <div class="card">
+      <h3>Reds Socials</h3>
+      <div><img src="img sources/IG.jpg" alt="IG" width="30%" height="25%"></div><a href="url">INSTAGRAM</a>
+      <div><img src="img sources/twitch_3291659.png" alt="TW" width="30%" height="25%"></div> <a href="url">TWITCH</a> 
+      <div><img src="img sources/gmail_732200 (1).png" alt="GM" width="30%" height="25%">></div> <a href="url">GMAIL</a>
+    </div>
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>+66 666-666-666</p>
+      <p>randomemail@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
+
+
